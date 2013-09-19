@@ -1,0 +1,200 @@
+ [
+  { "abbr" : "AL",
+  "title" : "Alabama"
+  },
+  { "abbr" : "AK",
+  "title" : "Alaska"
+  },
+  { "abbr" : "AZ",
+  "title" : "Arizona"
+  },
+  { "abbr" : "AR",
+  "title" : "Arkansas"
+  },
+  { "abbr" : "CA",
+  "title" : "California"
+  },
+  { "abbr" : "CO",
+  "title" : "Colorado"
+  },
+  { "abbr" : "CT",
+  "title" : "Connecticut"
+  },
+  { "abbr" : "DE",
+  "title" : "Delaware"
+  },
+  { "abbr" : "DC",
+  "title" : "District of Columbia"
+  },
+  { "abbr" : "FL",
+  "title" : "Florida"
+  },
+  { "abbr" : "GA",
+  "title" : "Georgia"
+  },
+  { "abbr" : "HI",
+  "title" : "Hawaii"
+  },
+  { "abbr" : "ID",
+  "title" : "Idaho"
+  },
+  { "abbr" : "IL",
+  "title" : "Illinois"
+  },
+  { "abbr" : "IN",
+  "title" : "Indiana"
+  },
+  { "abbr" : "IA",
+  "title" : "Iowa"
+  },
+  { "abbr" : "KS",
+  "title" : "Kansas"
+  },
+  { "abbr" : "KY",
+  "title" : "Kentucky"
+  },
+  { "abbr" : "LA",
+  "title" : "Louisiana"
+  },
+  { "abbr" : "ME",
+  "title" : "Maine"
+  },
+  { "abbr" : "MD",
+  "title" : "Maryland"
+  },
+  { "abbr" : "MA",
+  "title" : "Massachusetts"
+  },
+  { "abbr" : "MI",
+  "title" : "Michigan"
+  },
+  { "abbr" : "MN",
+  "title" : "Minnesota"
+  },
+  { "abbr" : "MS",
+  "title" : "Mississippi"
+  },
+  { "abbr" : "MO",
+  "title" : "Missouri"
+  },
+  { "abbr" : "MT",
+  "title" : "Montana"
+  },
+  { "abbr" : "NE",
+  "title" : "Nebraska"
+  },
+  { "abbr" : "NV",
+  "title" : "Nevada"
+  },
+  { "abbr" : "NH",
+  "title" : "New Hampshire"
+  },
+  { "abbr" : "NJ",
+  "title" : "New Jersey"
+  },
+  { "abbr" : "NM",
+  "title" : "New Mexico"
+  },
+  { "abbr" : "NY",
+  "title" : "New York"
+  },
+  { "abbr" : "NC",
+  "title" : "North Carolina"
+  },
+  { "abbr" : "ND",
+  "title" : "North Dakota"
+  },
+  { "abbr" : "OH",
+  "title" : "Ohio"
+  },
+  { "abbr" : "OK",
+  "title" : "Oklahoma"
+  },
+  { "abbr" : "OR",
+  "title" : "Oregon"
+  },
+  { "abbr" : "PA",
+  "title" : "Pennsylvania"
+  },
+  { "abbr" : "RI",
+  "title" : "Rhode Island"
+  },
+  { "abbr" : "SC",
+  "title" : "South Carolina"
+  },
+  { "abbr" : "SD",
+  "title" : "South Dakota"
+  },
+  { "abbr" : "TN",
+  "title" : "Tennessee"
+  },
+  { "abbr" : "TX",
+  "title" : "Texas"
+  },
+  { "abbr" : "UT",
+  "title" : "Utah"
+  },
+  { "abbr" : "VT",
+  "title" : "Vermont"
+  },
+  { "abbr" : "VA",
+  "title" : "Virginia"
+  },
+  { "abbr" : "WA",
+  "title" : "Washington"
+  },
+  { "abbr" : "WV",
+  "title" : "West Virginia"
+  },
+  { "abbr" : "WI",
+  "title" : "Wisconsin"
+  },
+  { "abbr" : "WY",
+  "title" : "Wyoming"
+  },
+  { "abbr" : "AB",
+  "title" : "Alberta"
+  },
+  { "abbr" : "BC",
+  "title" : "British Columbia"
+  },
+  { "abbr" : "MB",
+  "title" : "Manitoba"
+  },
+  { "abbr" : "NB",
+  "title" : "New Brunswick"
+  },
+  { "abbr" : "NL",
+  "title" : "Newfoundland & Labrador"
+  },
+  { "abbr" : "NS",
+  "title" : "Nova Scotia"
+  },
+  { "abbr" : "NT",
+  "title" : "Northwest Territories"
+  },
+  { "abbr" : "NU",
+  "title" : "Nunavut"
+  },
+  { "abbr" : "ON",
+  "title" : "Ontario"
+  },
+  { "abbr" : "PE",
+  "title" : "Prince Edward Island"
+  },
+  { "abbr" : "QC",
+  "title" : "Quebec"
+  },
+  { "abbr" : "SK",
+  "title" : "Saskatchewan"
+  },
+  { "abbr" : "YT",
+  "title" : "Yukon Territory"
+  },
+  { "abbr" : "GU",
+  "title" : "Guam"
+  },
+  { "abbr" : "PR",
+  "title" : "Puerto Rico"
+  }
+  ]
