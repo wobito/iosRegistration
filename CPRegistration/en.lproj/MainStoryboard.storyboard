@@ -185,7 +185,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="F30-uz-Iaa">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="c5a-dM-cNC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="c5a-dM-cNC">
                             <connections>
                                 <action selector="refreshFeed:" destination="403-3e-a41" id="T5Y-sS-PDt"/>
                             </connections>
@@ -267,7 +267,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hpb-hl-cbz">
-                                <rect key="frame" x="245" y="229" width="276" height="44"/>
+                                <rect key="frame" x="245" y="229" width="275" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Check-In &amp; Print Nametags" backgroundImage="btn.png">
