@@ -196,7 +196,7 @@
     NSString *aid = [NSString stringWithFormat:@"%@",[userData objectForKey:@"attendance_id"]];
     NSString *userId = [NSString stringWithFormat:@"%@",[userData objectForKey:@"user_id"]];
     //Set URL String
-        NSString *urlString = [NSString stringWithFormat:@"%@/cpreg/users/upload",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
+        NSString *urlString = [NSString stringWithFormat:@"%@/ipad/attendees/upload",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
     [request setURL:[NSURL URLWithString:urlString]];
@@ -234,7 +234,7 @@
 -(void) processCheckin {
     NSString *post = [NSString stringWithFormat:@"first=%@&last=%@&city=%@&state=%@&user_id=%@&attendance_id=%@",
                       firstField.text, lastField.text, cityField.text, stateField.text, [userData objectForKey:@"user_id"],[userData objectForKey:@"attendance_id"]];
-    NSString *urlCheckinString = [NSString stringWithFormat:@"%@/cpreg/users/checkin",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
+    NSString *urlCheckinString = [NSString stringWithFormat:@"%@/ipad/attendees/checkin",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
     
@@ -252,7 +252,7 @@
     
     NSString *post = [NSString stringWithFormat:@"pdf=%@",[responseArray valueForKey:@"pdf"]];
 
-    NSString *urlPrinter = [NSString stringWithFormat:@"%@/cpreg/printer/execute",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
+    NSString *urlPrinter = [NSString stringWithFormat:@"%@/ipad/attendees/print",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     

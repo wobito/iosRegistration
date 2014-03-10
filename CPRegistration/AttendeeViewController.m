@@ -53,7 +53,7 @@
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithCustomView:activityInd];
     [self navigationItem].rightBarButtonItem = barButton;
     
-    NSString *urlString = [NSString stringWithFormat:@"%@/cpreg/users/attendees/",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
+    NSString *urlString = [NSString stringWithFormat:@"%@/ipad/attendees/all",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     (void) [[NSURLConnection alloc] initWithRequest:request delegate:self];

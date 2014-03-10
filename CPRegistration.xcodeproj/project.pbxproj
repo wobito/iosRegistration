@@ -40,6 +40,7 @@
 		FAAF13981693CDC300F6DB8F /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAF13961693CDC300F6DB8F /* 19-gear@2x.png */; };
 		FAAF139B1693D06700F6DB8F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF139A1693D06700F6DB8F /* SettingsViewController.m */; };
 		FABEF3D417678D7B00EA91B0 /* banner-toronto.png in Resources */ = {isa = PBXBuildFile; fileRef = FABEF3D317678D7B00EA91B0 /* banner-toronto.png */; };
+		FAEC1DB618CA5A730096DE96 /* anaheimbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */; };
 		FAF56E7616977A23003C3C31 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF56E7516977A23003C3C31 /* btn.png */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		FAAF13991693D06700F6DB8F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		FAAF139A1693D06700F6DB8F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		FABEF3D317678D7B00EA91B0 /* banner-toronto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-toronto.png"; sourceTree = "<group>"; };
+		FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anaheimbackground.png; sourceTree = "<group>"; };
 		FAF56E7516977A23003C3C31 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 			children = (
 				FA2D8BCB17E0BEFB0032E109 /* T1Autograph */,
 				FAA83DEA17D7E41D00FC342E /* floridabanner.png */,
+				FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */,
 				FABEF3D317678D7B00EA91B0 /* banner-toronto.png */,
 				FA74D273173AA5B4009814F8 /* banner-anaheim.png */,
 				FA74D271173AA416009814F8 /* ecbl_blue_pressed.png */,
@@ -282,6 +285,7 @@
 				FA74D26D173AA3B6009814F8 /* closebox@2x.png in Resources */,
 				FA74D26E173AA3B6009814F8 /* ecbl_blue_pressed@2x.png in Resources */,
 				FA74D270173AA3F1009814F8 /* closebox.png in Resources */,
+				FAEC1DB618CA5A730096DE96 /* anaheimbackground.png in Resources */,
 				FA74D272173AA416009814F8 /* ecbl_blue_pressed.png in Resources */,
 				FA74D274173AA5B4009814F8 /* banner-anaheim.png in Resources */,
 				FABEF3D417678D7B00EA91B0 /* banner-toronto.png in Resources */,
