@@ -40,6 +40,7 @@
 		FAAF13981693CDC300F6DB8F /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAF13961693CDC300F6DB8F /* 19-gear@2x.png */; };
 		FAAF139B1693D06700F6DB8F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF139A1693D06700F6DB8F /* SettingsViewController.m */; };
 		FABEF3D417678D7B00EA91B0 /* banner-toronto.png in Resources */ = {isa = PBXBuildFile; fileRef = FABEF3D317678D7B00EA91B0 /* banner-toronto.png */; };
+		FAC17052190A9BFB0099EB81 /* toronto-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC17051190A9BFB0099EB81 /* toronto-banner.png */; };
 		FAEC1DB618CA5A730096DE96 /* anaheimbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */; };
 		FAF56E7616977A23003C3C31 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF56E7516977A23003C3C31 /* btn.png */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		FAAF13991693D06700F6DB8F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		FAAF139A1693D06700F6DB8F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		FABEF3D317678D7B00EA91B0 /* banner-toronto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-toronto.png"; sourceTree = "<group>"; };
+		FAC17051190A9BFB0099EB81 /* toronto-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toronto-banner.png"; sourceTree = "<group>"; };
 		FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anaheimbackground.png; sourceTree = "<group>"; };
 		FAF56E7516977A23003C3C31 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 		FA27AEF916921E7E00EDD735 /* CPRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				FAC17051190A9BFB0099EB81 /* toronto-banner.png */,
 				FA2D8BCB17E0BEFB0032E109 /* T1Autograph */,
 				FAA83DEA17D7E41D00FC342E /* floridabanner.png */,
 				FAEC1DB518CA5A730096DE96 /* anaheimbackground.png */,
@@ -276,6 +279,7 @@
 				FAAF13981693CDC300F6DB8F /* 19-gear@2x.png in Resources */,
 				FAF56E7616977A23003C3C31 /* btn.png in Resources */,
 				FA3B52AB169A982000402E96 /* appicon.png in Resources */,
+				FAC17052190A9BFB0099EB81 /* toronto-banner.png in Resources */,
 				FA3B52AD169A987400402E96 /* appicon@2x.png in Resources */,
 				FA5E21E917F0B8BB00751038 /* Media.xcassets in Resources */,
 				FA3B52AF169A988700402E96 /* Default-Portrait~ipad.png in Resources */,
