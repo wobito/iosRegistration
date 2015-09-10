@@ -54,6 +54,7 @@
     [self navigationItem].rightBarButtonItem = barButton;
     
     NSString *urlString = [NSString stringWithFormat:@"%@/ipad/attendees/all",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
+    NSLog(@"%@",urlString);
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     (void) [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -75,6 +76,7 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     attendeesArray = [NSJSONSerialization JSONObjectWithData:attendeesData options:NSJSONReadingMutableContainers error:nil];
     [attendeeTableView reloadData];
+//    NSLog(@"%@",attendeesArray);
     
     [self navigationItem].rightBarButtonItem = refreshBtn;
 }
@@ -123,11 +125,27 @@
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [[searchResults objectAtIndex:indexPath.row]objectForKey:@"name"];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",[[searchResults objectAtIndex:indexPath.row]objectForKey:@"city"],[[searchResults objectAtIndex:indexPath.row]objectForKey:@"state"]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@ - %@",[[searchResults objectAtIndex:indexPath.row]objectForKey:@"city"],[[searchResults objectAtIndex:indexPath.row]objectForKey:@"state"],[[searchResults objectAtIndex:indexPath.row]objectForKey:@"label"]];
+        
+        if([[[searchResults objectAtIndex:indexPath.row]objectForKey:@"seatType"] isEqual: @"PRIMARY"]) {
+            cell.imageView.image = [UIImage imageNamed:@"glyphicons-4-user.png"];
+        } else {
+            cell.imageView.image = [UIImage imageNamed:@"glyphicons-44-group.png"];
+        }
+        
     } else {
         cell.textLabel.text = [[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"name"];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"city"],[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"state"]];
-    }    
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@ - %@",[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"city"],[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"state"],[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"label"]];
+       
+        if([[[attendeesArray objectAtIndex:indexPath.row]objectForKey:@"seatType"] isEqual: @"PRIMARY"]) {
+            UIImage *theImage = [UIImage imageNamed:@"glyphicons-4-user.png"];
+            cell.imageView.image = theImage;
+        } else {
+            cell.imageView.image = [UIImage imageNamed:@"glyphicons-44-group.png"];
+        }
+        
+    }
+    
     return cell;
 }
 

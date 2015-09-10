@@ -132,6 +132,7 @@
     
     if(connection == checkinConn){
         NSLog(@"Received Data from Check-In Connection");
+                NSLog(@"%@", responseData);
         [responseData appendData:data];
     }
     
@@ -156,6 +157,7 @@
         NSLog(@"Processing Printing Nametags");
         if([responseData length] > 0) {
             responseArray = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
+            NSLog(@"%@", responseArray);
             [self processPrintNameTags];
         }
     }
@@ -192,9 +194,9 @@
     
     //Set Post Strings
 
-    NSString *imageName = [NSString stringWithFormat:@"%@-SIGNATURE.png",[userData objectForKey:@"attendance_id"]];
-    NSString *aid = [NSString stringWithFormat:@"%@",[userData objectForKey:@"attendance_id"]];
-    NSString *userId = [NSString stringWithFormat:@"%@",[userData objectForKey:@"user_id"]];
+    NSString *imageName = [NSString stringWithFormat:@"%@-SIGNATURE.png",[userData objectForKey:@"pivot_id"]];
+    NSString *aid = [NSString stringWithFormat:@"%@",[userData objectForKey:@"pivot_id"]];
+    NSString *userId = [NSString stringWithFormat:@"%@",[userData objectForKey:@"contact_id"]];
     //Set URL String
         NSString *urlString = [NSString stringWithFormat:@"%@/ipad/attendees/upload",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -232,11 +234,11 @@
 }
 
 -(void) processCheckin {
-    NSString *post = [NSString stringWithFormat:@"first=%@&last=%@&city=%@&state=%@&user_id=%@&attendance_id=%@",
-                      firstField.text, lastField.text, cityField.text, stateField.text, [userData objectForKey:@"user_id"],[userData objectForKey:@"attendance_id"]];
+    NSString *post = [NSString stringWithFormat:@"first=%@&last=%@&city=%@&state=%@&contact_id=%@&event_id=%@&pivot_id=%@",
+                      firstField.text, lastField.text, cityField.text, stateField.text, [userData objectForKey:@"contact_id"],[userData objectForKey:@"event_id"],[userData objectForKey:@"pivot_id"]];
     NSString *urlCheckinString = [NSString stringWithFormat:@"%@/ipad/attendees/checkin",[[NSUserDefaults standardUserDefaults] objectForKey:@"ServerRoot"]];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
+    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     
     NSMutableURLRequest *request2 = [[NSMutableURLRequest alloc] init];
     [request2 setURL:[NSURL URLWithString:urlCheckinString]];
@@ -244,7 +246,8 @@
     [request2 setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request2 setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request2 setHTTPBody:postData];
-    
+    NSLog(@"%@",urlCheckinString);
+     NSLog(@"Processing Checkin....");
     self.checkinConn = [[NSURLConnection alloc] initWithRequest:request2 delegate:self];
 }
 
@@ -309,11 +312,11 @@
     if(flag == YES) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         activityIndicator.hidden = NO;
-        NSLog(@"Show Activity Indicator");
+//        NSLog(@"Show Activity Indicator");
     } else {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         activityIndicator.hidden = YES;
-        NSLog(@"Hide Activity Indicator");        
+//        NSLog(@"Hide Activity Indicator");        
     }
 }
 

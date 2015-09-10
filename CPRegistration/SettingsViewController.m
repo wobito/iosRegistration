@@ -42,13 +42,13 @@
 
 - (IBAction)saveSettings:(id)sender {
     NSString *serverRoot = [[NSString alloc] init];    
-    NSRange range = [serverTextField.text rangeOfString:@"http://" options:NSCaseInsensitiveSearch];
-
-    if (range.location == NSNotFound) {
-        serverRoot = [NSString stringWithFormat:@"http://%@",serverTextField.text];
-    } else {
+    
+    if ([serverTextField.text.lowercaseString hasPrefix:@"https://"] || [serverTextField.text.lowercaseString hasPrefix:@"http://"]) {
         serverRoot = [NSString stringWithFormat:@"%@",serverTextField.text];
+    } else {
+        serverRoot = [NSString stringWithFormat:@"http://%@",serverTextField.text];
     }
+    NSLog(@"%@", serverRoot);
         
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:serverRoot forKey:@"ServerRoot"];

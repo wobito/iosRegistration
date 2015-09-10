@@ -30,6 +30,10 @@
 		FA3B52B6169AB37400402E96 /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = FA3B52B5169AB37400402E96 /* states.json */; };
 		FA5E21E717F0B89500751038 /* libT1Autograph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D8BCF17E0BEFB0032E109 /* libT1Autograph.a */; };
 		FA5E21E917F0B8BB00751038 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5E21E817F0B8BB00751038 /* Media.xcassets */; };
+		FA70C7141B9F3979000EFF8C /* glyphicons-4-user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA70C7101B9F3979000EFF8C /* glyphicons-4-user@2x.png */; };
+		FA70C7151B9F3979000EFF8C /* glyphicons-44-group.png in Resources */ = {isa = PBXBuildFile; fileRef = FA70C7111B9F3979000EFF8C /* glyphicons-44-group.png */; };
+		FA70C7161B9F3979000EFF8C /* glyphicons-44-group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA70C7121B9F3979000EFF8C /* glyphicons-44-group@2x.png */; };
+		FA70C7181B9F3DBF000EFF8C /* glyphicons-4-user.png in Resources */ = {isa = PBXBuildFile; fileRef = FA70C7171B9F3DBF000EFF8C /* glyphicons-4-user.png */; };
 		FA74D26D173AA3B6009814F8 /* closebox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA74D26B173AA3B6009814F8 /* closebox@2x.png */; };
 		FA74D26E173AA3B6009814F8 /* ecbl_blue_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA74D26C173AA3B6009814F8 /* ecbl_blue_pressed@2x.png */; };
 		FA74D270173AA3F1009814F8 /* closebox.png in Resources */ = {isa = PBXBuildFile; fileRef = FA74D26F173AA3F1009814F8 /* closebox.png */; };
@@ -80,6 +84,10 @@
 		FA3B52B3169AA39900402E96 /* StateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateViewController.m; sourceTree = "<group>"; };
 		FA3B52B5169AB37400402E96 /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = states.json; sourceTree = "<group>"; };
 		FA5E21E817F0B8BB00751038 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = CPRegistration/Media.xcassets; sourceTree = "<group>"; };
+		FA70C7101B9F3979000EFF8C /* glyphicons-4-user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-4-user@2x.png"; path = "CPRegistration/glyphicons-4-user@2x.png"; sourceTree = "<group>"; };
+		FA70C7111B9F3979000EFF8C /* glyphicons-44-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-44-group.png"; path = "CPRegistration/glyphicons-44-group.png"; sourceTree = "<group>"; };
+		FA70C7121B9F3979000EFF8C /* glyphicons-44-group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-44-group@2x.png"; path = "CPRegistration/glyphicons-44-group@2x.png"; sourceTree = "<group>"; };
+		FA70C7171B9F3DBF000EFF8C /* glyphicons-4-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-4-user.png"; sourceTree = "<group>"; };
 		FA74D26B173AA3B6009814F8 /* closebox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closebox@2x.png"; sourceTree = "<group>"; };
 		FA74D26C173AA3B6009814F8 /* ecbl_blue_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ecbl_blue_pressed@2x.png"; sourceTree = "<group>"; };
 		FA74D26F173AA3F1009814F8 /* closebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closebox.png; sourceTree = "<group>"; };
@@ -119,6 +127,10 @@
 				FA3B52AE169A988700402E96 /* Default-Portrait~ipad.png */,
 				FA3B52AC169A987400402E96 /* appicon@2x.png */,
 				FA3B52AA169A982000402E96 /* appicon.png */,
+				FA70C7171B9F3DBF000EFF8C /* glyphicons-4-user.png */,
+				FA70C7101B9F3979000EFF8C /* glyphicons-4-user@2x.png */,
+				FA70C7111B9F3979000EFF8C /* glyphicons-44-group.png */,
+				FA70C7121B9F3979000EFF8C /* glyphicons-44-group@2x.png */,
 				FA27AEF916921E7E00EDD735 /* CPRegistration */,
 				FA27AEF216921E7E00EDD735 /* Frameworks */,
 				FA27AEF016921E7E00EDD735 /* Products */,
@@ -276,7 +288,9 @@
 				FA27AF0D16921E7E00EDD735 /* MainStoryboard.storyboard in Resources */,
 				FA2D8BD417E0BEFB0032E109 /* t1_logo.png in Resources */,
 				FAAF13971693CDC300F6DB8F /* 19-gear.png in Resources */,
+				FA70C7141B9F3979000EFF8C /* glyphicons-4-user@2x.png in Resources */,
 				FAAF13981693CDC300F6DB8F /* 19-gear@2x.png in Resources */,
+				FA70C7161B9F3979000EFF8C /* glyphicons-44-group@2x.png in Resources */,
 				FAF56E7616977A23003C3C31 /* btn.png in Resources */,
 				FA3B52AB169A982000402E96 /* appicon.png in Resources */,
 				FAC17052190A9BFB0099EB81 /* toronto-banner.png in Resources */,
@@ -284,6 +298,8 @@
 				FA5E21E917F0B8BB00751038 /* Media.xcassets in Resources */,
 				FA3B52AF169A988700402E96 /* Default-Portrait~ipad.png in Resources */,
 				FA3B52B1169A988A00402E96 /* Default-Landscape~ipad.png in Resources */,
+				FA70C7151B9F3979000EFF8C /* glyphicons-44-group.png in Resources */,
+				FA70C7181B9F3DBF000EFF8C /* glyphicons-4-user.png in Resources */,
 				FA3B52B6169AB37400402E96 /* states.json in Resources */,
 				FA2D8BD317E0BEFB0032E109 /* autograph_x.png in Resources */,
 				FA74D26D173AA3B6009814F8 /* closebox@2x.png in Resources */,
