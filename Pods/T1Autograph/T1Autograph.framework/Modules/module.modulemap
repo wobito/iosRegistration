@@ -1,6 +1,0 @@
-framework module T1Autograph {
-  umbrella header "T1Autograph.h"
-
-  export *
-  module * { export * }
-}
