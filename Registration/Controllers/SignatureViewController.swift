@@ -21,6 +21,7 @@ class SignatureViewController: UIViewController {
     var attendee = Attendee()
     var autograph: T1Autograph = T1Autograph()
     var outputImage: UIImageView! = UIImageView()
+    var t1Key:String = ""
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var programLabel: UILabel!
@@ -33,7 +34,7 @@ class SignatureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setT1Key()
         nameLabel.text = attendee.name
         programLabel.text = "PROGRAM: \(attendee.label)"
         locationLabel.text = "LOCATION: \(attendee.city), \(attendee.state)"
@@ -44,9 +45,8 @@ class SignatureViewController: UIViewController {
     
     func configureView() {
         signatureView.layer.cornerRadius = CGFloat(5)
-        
         autograph = T1Autograph.autograph(withView: signatureView, delegate: self) as! T1Autograph
-        autograph.licenseCode = "38ba27ca4584918b896b7895f677fe8b3e0433f9"
+        autograph.licenseCode = t1Key
         autograph.showGuideline = false
         
         checkInBtn.alpha = 0
@@ -116,6 +116,15 @@ class SignatureViewController: UIViewController {
         }
     }
     
+    func setT1Key() {
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+            let dictRoot = NSDictionary(contentsOfFile: path)
+            if let dict = dictRoot {
+                t1Key = dict["T1Key"] as! String
+            }
+        }
+    }
+    
     @IBAction func closeModal(_ sender: Any) {
         dismissModal()
     }
@@ -140,6 +149,8 @@ class SignatureViewController: UIViewController {
         autograph.done(self)
     }
 }
+
+
 
 // MARK: Signature Delegate
 extension SignatureViewController: T1AutographDelegate {
