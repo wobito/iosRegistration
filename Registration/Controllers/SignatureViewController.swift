@@ -63,7 +63,7 @@ class SignatureViewController: UIViewController {
     func uploadSignature(signature: T1Signature, attendee: Attendee) {
         let imageName = "\(attendee.pivotId)-SIGNATURE.png"
         let image = UIImage(data: signature.imageData)
-        let imageData = UIImagePNGRepresentation(image!)
+        let imageData = image!.pngData()
         let pivotId = "\(attendee.pivotId)".data(using: String.Encoding.utf8)!
         
         Alamofire.upload(multipartFormData: { multipartFormData in

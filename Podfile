@@ -7,9 +7,9 @@ target 'Registration' do
 
   # Pods for Todoey
   # Pods for Registration
-  pod 'Alamofire', '~> 4.5'
+  pod 'Alamofire'
   pod 'T1Autograph', '~> 2.0'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
-  pod 'SwiftyJSON'
+  pod 'SwiftyJSON', '~> 4.1'
   pod 'SVProgressHUD'
 end
