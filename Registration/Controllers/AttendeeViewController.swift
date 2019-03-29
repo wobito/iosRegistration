@@ -20,10 +20,12 @@ class AttendeeViewController: BaseController {
     @IBOutlet weak var searchTextField: UITextFieldX!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var BuildLabel: UILabel!
+    
     // MARK: Main Controller Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        BuildLabel.text = "BUILD: 1903.26"
         configureView()
         getAttendees()
     }
@@ -31,7 +33,7 @@ class AttendeeViewController: BaseController {
     func getAttendees() {
         attendeesArray = []
         toggleNetworkIndicator(show: true)
-        titleLabel.text = "Loading Registrants.... Please Wait"
+        titleLabel.text = "Loading Registrants..."
         SVProgressHUD.show(withStatus: "Loading Registrants")
         Alamofire.request(url, method: .get).responseJSON { response in
             if response.result.isSuccess {
